@@ -26,9 +26,9 @@ const Header = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 justify-between h-16">
+    <div className="navbar bg-base-100 justify-between h-16 container mx-auto">
       <div className="navbar-start w-full lg:w-fit justify-between">
-        <div className="dropdown">
+        <div className="dropdown order-2">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,12 +47,14 @@ const Header = () => {
           </label>
           <ul
             tabIndex="0"
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 gap-2"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 gap-2 right-0"
           >
             {menuItems}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl capitalize">doctor portal</a>
+        <Link to="/" className="btn btn-ghost text-xl capitalize">
+          doctor portal
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0 gap-4">{menuItems}</ul>
