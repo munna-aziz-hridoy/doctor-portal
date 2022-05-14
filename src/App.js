@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import About from "./Pages/About/About";
 import Appointment from "./Pages/Appointment/Appointment";
@@ -13,11 +14,11 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/appointment" element={<Appointment />} />
-        <Route path="/reviews" element={<Reviews />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<Home Footer={Footer} />} />
+        <Route path="/about" element={<About Footer={Footer} />} />
+        <Route path="/appointment" element={<Appointment Footer={Footer} />} />
+        <Route path="/reviews" element={<Reviews Footer={Footer} />} />
+        <Route path="/contact" element={<Contact Footer={Footer} />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
