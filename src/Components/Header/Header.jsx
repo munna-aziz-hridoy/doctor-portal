@@ -26,8 +26,8 @@ const Header = () => {
   );
 
   return (
-    <div className="shadow-sm">
-      <div className="navbar bg-base-100 justify-between h-16 container mx-auto">
+    <div className="shadow-sm sticky top-0 z-50 bg-base-100">
+      <div className="navbar  justify-between h-16 container mx-auto">
         <div className="navbar-start w-full lg:w-fit justify-between">
           <div className="dropdown order-2">
             <label tabIndex="0" className="btn btn-ghost lg:hidden">
